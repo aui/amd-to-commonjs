@@ -1,0 +1,32 @@
+{
+  "name": "amd-to-commonjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "a2c": "bin/main"
+  },
+  "scripts": {
+    "test": "bin/main test/amd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aui/amd-to-commonjs.git"
+  },
+  "author": "aui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aui/amd-to-commonjs/issues"
+  },
+  "homepage": "https://github.com/aui/amd-to-commonjs#readme",
+  "devDependencies": {
+    "js-beautify": "^1.6.8"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "keywords": [
+    "amd",
+    "commonjs"
+  ]
+}

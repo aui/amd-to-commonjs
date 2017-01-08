@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const amdToCommonJS = require('../');
+const files = process.argv.slice(2);
+
+files.forEach(file => {
+    console.log(file);
+    let amd = fs.readFileSync(file, 'utf8');
+    let commonjs = amdToCommonJS(amd, {filename: file});
+    fs.writeFileSync(file, commonjs, 'utf8');
+});
