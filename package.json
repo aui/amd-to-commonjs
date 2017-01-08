@@ -1,6 +1,6 @@
 {
   "name": "amd-to-commonjs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "bin": {
@@ -19,14 +19,14 @@
     "url": "https://github.com/aui/amd-to-commonjs/issues"
   },
   "homepage": "https://github.com/aui/amd-to-commonjs#readme",
-  "devDependencies": {
-    "js-beautify": "^1.6.8"
-  },
   "engines": {
     "node": ">= 6.0.0"
   },
   "keywords": [
     "amd",
     "commonjs"
-  ]
+  ],
+  "dependencies": {
+    "jscodeshift": "^0.3.30"
+  }
 }

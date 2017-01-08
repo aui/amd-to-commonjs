@@ -1,41 +1,23 @@
 # amd-to-commonjs
 
-将 AMD 风格转换成 CommonJS 的 JavaScript 小工具。
+A codemod to transform amd style includes into commonjs includes.
 
-## 安装
+## Install
 
 ```
 npm install -g amd-to-commonjs
 ```
 
-## 使用
+## Use
 
 ```
 a2c <...path>
 ```
+## Links
 
-## 不足
+- [Live example on AST Explorer](http://astexplorer.net/#/qnUtxENiO8)
 
-由于目前实现比较简单，没有进行语法分析，所以代码的 `return` 语句必须在函数末尾才能正确转换。
+## License
 
-**支持**
-
-```javascript
-define(['jquery'], function($) {
-    // [more code..]
-    return {};
-});
-```
-
-**不支持**
-
-```javascript
-define(['jquery'], function($) {
-    // [more code..]
-    if (true) {
-        return {};
-    } else {
-        return {};
-    }
-});
-```
+Licensed under the
+[MIT license](https://github.com/skratchdot/amd-to-commonjs-codemod/blob/master/LICENSE-MIT).
