@@ -20,4 +20,4 @@ a2c <...path>
 ## License
 
 Licensed under the
-[MIT license](https://github.com/skratchdot/amd-to-commonjs-codemod/blob/master/LICENSE-MIT).
+[MIT license](./LICENSE).
